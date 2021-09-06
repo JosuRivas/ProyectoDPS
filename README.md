@@ -12,6 +12,7 @@ Creacion de una aplicacion de venta de libros y biblioteca personal para la mate
 
 ### Integrantes
 Cesar Josue Rivas González RG180141
+Bryan Omar Pérez Jiménez PJ181688
 
 
 ### Licencia 📑
