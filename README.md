@@ -14,6 +14,7 @@ Creacion de una aplicacion de venta de libros y biblioteca personal para la mate
 Cesar Josue Rivas González RG180141
 Bryan Omar Pérez Jiménez PJ181688
 Gerardo Rene Loucel Mendez LM182178
+Henry Salvador López Alvarenga LA180620
 
 
 ### Licencia 📑
