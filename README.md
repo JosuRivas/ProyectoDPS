@@ -11,10 +11,10 @@ Creacion de una aplicacion de venta de libros y biblioteca personal para la mate
 -[MongoDB] https://www.mongodb.com/es/cloud/atlas/signup  
 
 ### Integrantes
-Cesar Josue Rivas González RG180141
-Bryan Omar Pérez Jiménez PJ181688
-Gerardo Rene Loucel Mendez LM182178
-Henry Salvador López Alvarenga LA180620
+Cesar Josue Rivas González RG180141  
+Bryan Omar Pérez Jiménez PJ181688  
+Gerardo Rene Loucel Mendez LM182178  
+Henry Salvador López Alvarenga LA180620  
 
 
 ### Licencia 📑
@@ -24,5 +24,5 @@ Este proyecto esta bajo la licencia Atribución-NoComercial-SinDerivadas 4.0 Int
 Usted es libre de: Compartir — copiar y redistribuir el material en cualquier medio o formato. La licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia.
 
 ### Enlaces de interés ❗
-Tablero de trello: https://trello.com/b/i64DULCT/proyecto-dps-aplicacion-de-ebooks
+Tablero de trello: https://trello.com/b/i64DULCT/proyecto-dps-aplicacion-de-ebooks  
 Mock-ups de diseño: 
