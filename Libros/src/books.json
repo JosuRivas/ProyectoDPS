@@ -1,0 +1,24 @@
+{
+    "libros":[
+        {
+            "titulo":"El camino de los reyes",
+            "autor":"Brandon Sanderson",
+            "portada": "../img/1.jpg"
+        },
+        {
+            "titulo":"Palabras radiantes",
+            "autor":"Brandon Sanderson",
+            "portada": "../img/1.jpg"
+        },
+        {
+            "titulo":"Juramentada",
+            "autor":"Brandon Sanderson",
+            "portada": "../img/1.jpg"
+        },
+        {
+            "titulo":"El ritmo de la guerra",
+            "autor":"Brandon Sanderson",
+            "portada": "../img/1.jpg"
+        }
+    ]
+}
