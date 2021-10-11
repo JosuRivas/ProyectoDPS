@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import Home from './src/modules/Home'; import Library from './src/modules/Library';
 import Store from './src/modules/Store'; import Settings from './src/modules/Settings';
-
+import bookPage from './src/modules/subpages/bookPage';
 const Tab = createBottomTabNavigator();
 
 export default function App(){
@@ -46,6 +46,7 @@ export default function App(){
         <Tab.Screen name="Tienda" component={Store} />
         <Tab.Screen name="Biblioteca" component={Library} />
         <Tab.Screen name="Más" component={Settings} />
+        <Tab.Screen name="BookPage" component={bookPage} options={{tabBarButton: () => null,tabBarVisible: false,}}/>
       </Tab.Navigator>
     </NavigationContainer>
   );

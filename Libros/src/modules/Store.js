@@ -1,58 +1,73 @@
 import React from 'react'; 
-import {StyleSheet,Text,ScrollView,View,Image} from 'react-native';
+import {StyleSheet,Text,ScrollView,View,Image,Pressable} from 'react-native';
+import books from '../../data/books.json';
 
-export default function Store(){
-    let books = require('../books.json');
+
+
+export default function Store({navigation}){
+
     return(
-        <View style={styles.container}>
-            <View style={styles.sectionHeader}>
-                <Text>Recomendados</Text>
-            </View>
-            <ScrollView horizontal>
-                {books.libros.map(book => (
-                    <View>
-                        <Image
-                            style={styles.bookCover}
-                            source={require('../img/1.jpg')}
-                        />
-                        <Text>{book.autor}</Text>
-                        <Text>{book.titulo}</Text>    
-                    </View>))}
-            </ScrollView>
-
-            <View style={styles.sectionHeader}>
-                <Text>Novedades</Text>
-            </View>
-                <ScrollView horizontal>
-                    {books.libros.map(book => (
-
-                    <View>
-                        <Image
-                            style={styles.bookCover}
-                            source={require('../img/1.jpg')}
-                        />
-                        <Text>{book.autor}</Text>
-                        <Text>{book.titulo}</Text>    
-                    </View>))}
+        <>
+        <ScrollView nestedScrollEnabled={true}>
+            <View style={styles.container}>
+                <View>
+                    <Text style={styles.sectionHeader}>Fantasía</Text>
+                </View>
+                <ScrollView horizontal nestedScrollEnabled={true} style={styles.categoryContainer}>
+                    {books.Fantasia.map(book => (
+                        <View>
+                            <Pressable onPress={()=> {navigation.navigate("BookPage",{book})}}>
+                                <Image
+                                    style={styles.bookCover}
+                                    source={{uri: book.Portada}}
+                                />
+                            </Pressable>
+                            <Text style={styles.imageDesc}>{book.Titulo}</Text>  
+                            <Text style={styles.imageDesc}>{book.Autor}</Text>
+                        </View>))}
                 </ScrollView>
-
-                <View style={styles.sectionHeader}>
-                <Text>Promociones recomendadas</Text>
             </View>
-                <ScrollView horizontal>
-                    {books.libros.map(book => (
 
-                    <View>
-                        <Image
-                            style={styles.bookCover}
-                            source={require('../img/1.jpg')}
-                        />
-                        <Text>{book.autor}</Text>
-                        <Text>{book.titulo}</Text>    
-                    </View>))}
+            <View style={styles.container}>
+                <View>
+                    <Text style={styles.sectionHeader}>Ciencia Ficción</Text>
+                </View>
+                <ScrollView horizontal nestedScrollEnabled={true} style={styles.categoryContainer}>
+                    {books.Ciencia_Ficcion.map(book => (
+                        <View>
+                            <Pressable onPress={()=> {navigation.navigate("BookPage",{book})}}>
+                                <Image
+                                    style={styles.bookCover}
+                                    source={{uri: book.Portada}}
+                                />
+                            </Pressable>
+                            <Text style={styles.imageDesc}>{book.Titulo}</Text>  
+                            <Text style={styles.imageDesc}>{book.Autor}</Text>
+                        </View>))}
                 </ScrollView>
-        </View>
+            </View>
 
+            <View style={styles.container}>
+                <View>
+                    <Text style={styles.sectionHeader}>Misterio</Text>
+                </View>
+                <ScrollView horizontal nestedScrollEnabled={true} style={styles.categoryContainer}>
+                    {books.Misterio.map(book => (
+                        <View>
+                            <Pressable onPress={()=> {navigation.navigate("BookPage",{book})}}>
+                                <Image
+                                    style={styles.bookCover}
+                                    source={{uri: book.Portada}}
+                                />
+                            </Pressable>
+                            <Text style={styles.imageDesc}>{book.Titulo}</Text>  
+                            <Text style={styles.imageDesc}>{book.Autor}</Text>
+                        </View>))}
+                </ScrollView>
+            </View>
+        </ScrollView>
+        
+         </>
         
     );
 }
@@ -69,5 +84,16 @@ const styles = StyleSheet.create({
         height:300
     },
     sectionHeader:{
+        fontSize:20,
+        fontWeight:'bold'
+
+    },
+    categoryContainer:{
+        marginVertical:25,
+        marginHorizontal:5,
+
+    },
+    imageDesc:{
+        textAlign:'center',
     }
 });
