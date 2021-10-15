@@ -1,0 +1,153 @@
+{
+    "Fantasia":[
+        {
+            "id":1,
+            "Titulo":"El camino de los reyes",
+            "Autor":"Brandon Sanderson",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51-UIn1TksL._SX298_BO1,204,203,200_.jpg",
+            "Descripcion":"The Way of Kings es una novela épica de fantasía escrita por el autor estadounidense Brandon Sanderson y el primer libro de la serie The Stormlight Archive.",
+            "Precio":9.99
+        },
+        {
+            "id":2,
+            "Titulo":"Palabras radiantes",
+            "Autor":"Brandon Sanderson",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51UJIGfdFFL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+            "Descripcion":"Words of Radiance es una novela de fantasía épica escrita por el autor estadounidense Brandon Sanderson y el segundo libro de la serie The Stormlight Archive.",
+            "Precio":10.99
+        },
+        {
+            "id":3,
+            "Titulo":"Juramentada",
+            "Autor":"Brandon Sanderson",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/515LLJbf1hL._SX303_BO1,204,203,200_.jpg",
+            "Descripcion":"Oathbringer es una novela de fantasía épica escrita por el autor estadounidense Brandon Sanderson y el tercer libro de la serie The Stormlight Archive.",
+            "Precio":10.99
+        },
+        {
+            "id":4,
+            "Titulo":"El ritmo de la guerra",
+            "Autor":"Brandon Sanderson",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51cmca1DNWL._SX324_BO1,204,203,200_.jpg",
+            "Descripcion":"El Ritmo de la Guerra es la esperada cuarta parte de la decalogía El Archivo de las Tormentas y el libro que continúa la historia de El camino de los reyes, Palabras radiantes y Juramentada",
+            "Precio":15.99
+        },
+        {
+            "id":5,
+            "Titulo":"El nombre del viento",
+            "Autor":"Patrick Rothfuss",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51JThzjy3gL._SX306_BO1,204,203,200_.jpg",
+            "Descripcion":"El nombre del viento. Crónica del asesino de reyes: primer día es una novela de fantasía épica, perteneciente a la serie Crónica del Asesino de Reyes, escrita por Patrick Rothfuss",
+            "Precio":7.99
+        },
+        {
+            "id":6,
+            "Titulo":"El temor de un hombre sabio",
+            "Autor":"Patrick Rothfuss",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51-ckcKhlAL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+            "Descripcion":"El temor de un hombre sabio. Crónica del asesino de reyes: segundo día es la continuación de El nombre del viento y pertenece a la serie Crónica del asesino de reyes.",
+            "Precio":9.99
+        }
+    ],
+    "Ciencia_Ficcion":[
+        {
+            "id":7,
+            "Titulo":"El problema de los tres cuerpos",
+            "Autor":"Cixin Liu",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51c6PKzjPLL._SX327_BO1,204,203,200_.jpg",
+            "Descripcion":"El problema de los tres cuerpos es una novela de ciencia ficción del escritor chino Liu Cixin. Es el primer libro de la trilogía titulada El recuerdo del pasado de la Tierra",
+            "Precio":11.99
+        },
+        {
+            "id":8,
+            "Titulo":"El bosque oscuro",
+            "Autor":"Cixin Liu",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51ZYUoBuKuL._SX331_BO1,204,203,200_.jpg",
+            "Descripcion":"Ahora la Tierra tiene cuatro siglos para defenderse de lo inevitable: la llegada de los Trisolaris. Los colaboracionistas humanos pueden haber sido derrotados, pero los sofones permiten a los extraterrestres acceder a la información de la humanidad",
+            "Precio":11.99
+        },
+        {
+            "id":9,
+            "Titulo":"El fin de la muerte",
+            "Autor":"Cixin Liu",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51Z+ClxwBjL._SX331_BO1,204,203,200_.jpg",
+            "Descripcion":"Tras El problema de los tres cuerpos y El bosque oscuro, la tensa espera de la humanidad concluye ahora con un último episodio, tan extraordinario como los anteriores, lleno de ideas electrizantes y una calidad de obra maestra.",
+            "Precio":11.99
+        },
+        {
+            "id":10,
+            "Titulo":"Dune",
+            "Autor":"Frank Herbert",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/41SrvOHH8zL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+            "Descripcion":"Dune es una novela de ciencia ficción escrita por Frank Herbert en 1965. Su éxito fue rotundo; en 1966 ganó el Premio Hugo y en 1965 la primera edición del Premio Nébula a la mejor novela de ciencia ficción.",
+            "Precio":9.99
+        },
+        {
+            "id":11,
+            "Titulo":"Fundacion trilogia",
+            "Autor":"Isaac Asimov",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51f2gR9k37S._SX300_BO1,204,203,200_.jpg",
+            "Descripcion":"La «Trilogía de la Fundación» está considerada la mejor serie de la ciencia ficción universal. Como tal, fue galardonada en 1966 con un premio Hugo, y ahora reunida en un único volumen: una lectura imprescindible para los amantes del género.",
+            "Precio":20.99
+        },
+        {
+            "id":12,
+            "Titulo":"El marciano",
+            "Autor":"Andy Weir",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/41CVneRQU3L._SX320_BO1,204,203,200_.jpg",
+            "Descripcion":"Novela brillante, delirio ingenioso, con una mecánica del suspense que sorprenderá al lector una y otra vez. Una experiencia literaria excepcional en gravedad cero.",
+            "Precio":8.99
+        }
+    ],
+    "Misterio":[
+        {
+            "id":13,
+            "Titulo":"El codigo Da Vinci",
+            "Autor":"Dan Brown",
+            "Portada":"https://m.media-amazon.com/images/I/51hYdKyWYqL.jpg",
+            "Descripcion":"Robert Langdon recibe una llamada en mitad de la noche: el conservador del museo del Louvre ha sido asesinado en extrañas circunstancias y junto a su cadáver ha aparecido un desconcertante mensaje cifrado.",
+            "Precio":9.99
+        },
+        {
+            "id":14,
+            "Titulo":"Death in the air",
+            "Autor":"Kate Winkler Dawson",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51n4q3qlBTL._SX329_BO1,204,203,200_.jpg",
+            "Descripcion":"A real-life thriller in the vein of The Devil in the White City, Kate Winkler Dawson's debut Death in the Air is a gripping, historical narrative of a serial killer, an environmental disaster, and an iconic city struggling to regain its footing. ", 
+            "Precio":9.99
+        },
+        {
+            "id":15,
+            "Titulo":"La chica del tren",
+            "Autor":"Paula Hawkins",
+            "Portada":"https://m.media-amazon.com/images/I/51n7DYxrLTL.jpg",
+            "Descripcion":"Rachel toma siempre el tren de las 8.04 h. Cada mañana lo mismo: el mismo paisaje, las mismas casas… y la misma parada en la señal roja. Son solo unos segundos, pero le permiten observar a una pareja desayunando tranquilamente en su terraza. Siente que los conoce y se inventa unos nombres para ellos: Jess y Jason. Su vida es perfecta, no como la suya. Pero un día ve algo. Sucede muy deprisa, pero es suficiente. ¿Y si Jess y Jason no son tan felices como ella cree? ¿Y si nada es lo que parece?",
+            "Precio":12.99
+        },
+        {
+            "id":16,
+            "Titulo":"Gone Girl",
+            "Autor":"Gillian Flynn",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/417SGy4OxRL._SX327_BO1,204,203,200_.jpg",
+            "Descripcion":"En su quinto aniversario de boda, Nick informa que su esposa Amy ha desaparecido misteriosamente. Pronto la presión policial y mediática hace que el retrato de felicidad doméstica que ofrece Nick empiece a tambalearse y se convierte en sospechoso.",
+            "Precio":9.99
+        },
+        {
+            "id":17,
+            "Titulo":"Asesinato en el orient express",
+            "Autor":"Agatha Christie",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/519RY8Q9CqL._SX331_BO1,204,203,200_.jpg",
+            "Descripcion":"En un lugar aislado de la antigua Yugoslavia, en plena madrugada, una fuerte tormenta de nieve obstaculiza la línea férrea por donde circula el Orient Express. Procedente de la exótica Estambul, en él viaja el detective Hércules Poirot, que repentinamente se topa con uno de los casos más desconcertantes de su carrera: en el compartimiento vecino ha sido asesinado Samuel E. Ratchett mientras dormía, pese a que ningún indicio trasluce un móvil concreto.",
+            "Precio":7.99
+        },
+        {
+            "id":18,
+            "Titulo":"The postman always rings twice",
+            "Autor":"James M. Cain",
+            "Portada":"https://images-na.ssl-images-amazon.com/images/I/51Drv+o-DTL._SX328_BO1,204,203,200_.jpg",
+            "Descripcion":"Frank Chambers, un trotamundos sin empleo, narra en primera persona la atracción que siente por Cora Papadakis, la esposa de un emigrante de origen griego propietario de una taberna en California, y cómo se vuelven amantes unidos por el ardor y la ambición. Pero no será tan fácil librarse del viejo marido.",
+            "Precio":11.99
+        }
+    ]
+        
+}
