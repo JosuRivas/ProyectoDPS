@@ -15,6 +15,7 @@ Cesar Josue Rivas González RG180141
 Bryan Omar Pérez Jiménez PJ181688  
 Gerardo Rene Loucel Mendez LM182178  
 Henry Salvador López Alvarenga LA180620  
+Luis Henry Henriquez Cruz HC180393
 
 
 ### Licencia 📑
