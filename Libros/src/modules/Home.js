@@ -1,8 +1,9 @@
 import React, {useContext, useEffect}from 'react'; 
-import {StyleSheet, TextInput,Text, View, Pressable,Alert,StatusBar,BackHandler} from 'react-native';
+import {StyleSheet, TextInput,Text, View, Pressable,Alert,StatusBar,BackHandler,ScrollView} from 'react-native';
 import { UsuarioContext } from './login/context/UsuarioContext';
-
-
+import MyCarousel from '../../components/Carousel';
+import Productos from '../../components/productos';
+import { dummyData } from '../../data/Data';
 function useBackButton(handler){
     useEffect(()=>{
         BackHandler.addEventListener('hardwareBackPress',handler);
@@ -21,13 +22,22 @@ export default function Home({navigation}){
     const [login, loginAction] = useContext(UsuarioContext);
 
     return(
+        <ScrollView>
+
         <View style={styles.container}>
+            <MyCarousel data = {dummyData}/>
+            
+             <Productos/>
+
+        </View>
+        </ScrollView>
+        /*<View style={styles.container}>
             <StatusBar backgroundColor={'#d7e9ce'} barStyle='dark-content' translucent={true}/>
             <Text>Bienvendo {login.usuario.email}</Text>
             <Pressable onPress={()=>desconectarse()}>
                 <Text style={styles.submit}>Cerrar Sesión</Text>
             </Pressable>
-        </View>
+        </View>*/
     )
 
     function goToScreen(route){
@@ -60,8 +70,7 @@ export default function Home({navigation}){
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        justifyContent:'center',
-        alignItems:'center'
+        backgroundColor:'black'
     },
     submit:{
             padding:15,
