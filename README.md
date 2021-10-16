@@ -1,6 +1,7 @@
 # ProyectoDPS 📕
 Creacion de una aplicacion de venta de libros y biblioteca personal para la materia de Diseño y Programación de Software Multiplataforma en la Universidad Don Bosco, El Salvador.
-
+###Video fase 2:  
+https://www.youtube.com/watch?v=rb77btppGzA  
 ### Herramientas 🛠️
 -[Visual Studio code] https://code.visualstudio.com/Download  
 -[Expo] https://docs.expo.dev/get-started/installation/  
@@ -29,5 +30,5 @@ Tablero de trello: https://trello.com/b/i64DULCT/proyecto-dps-aplicacion-de-eboo
 Mock-ups de diseño: https://drive.google.com/drive/folders/1Il09isp9-UyJEQLdCLv3GksfwSZyqPQp
 
 ### Manuales 📔
-Manual de usuario: 
+Manual de usuario: https://drive.google.com/file/d/1CgsWcR8rNwfxlcHDggfVj07Lono-NYjx/view?usp=sharing  
 Manual técnico: https://drive.google.com/file/d/1YoorWQpxCKEwOpCNBZWDOdC3ppzTFFpr/view?usp=sharing
