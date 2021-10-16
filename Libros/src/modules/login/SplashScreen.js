@@ -14,18 +14,19 @@ export default function SplashScreen(props){
 
     
         return(
-            <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+            <View style={{flex:1,justifyContent:'center',alignItems:'center',backgroundColor:'black'}}>
                 <StatusBar translucent backgroundColor='rgba(0,0,0,0.2)'/>
                 <Animatable.Image 
                     animation='pulse'
                     easing='ease-out'
                     iterationCount='infinite'
                     style={{
-                        width:200,
-                        height:200,
+                        width:320,
+                        height:290,
                     }}
                     source={require('../../img/logo.png')}
                 />
+                <Animatable.Text animation='bounceIn' easing='ease-in' iterationCount={1} style={styles.text}>Ingresando...</Animatable.Text>
             </View>
         )
 
@@ -49,6 +50,17 @@ export default function SplashScreen(props){
         }
     
 }
+
+const styles = StyleSheet.create(
+    {
+        text:{
+            color:'#fff',
+            fontFamily:'EncodeSans-Bold',
+            fontSize:30,
+            marginTop:80,
+        }
+    }
+)
 
 
 

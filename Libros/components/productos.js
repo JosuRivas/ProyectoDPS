@@ -88,7 +88,7 @@ const Productos = () => {
               </TextInput>
                 <Feather name='search' size={22} color='#666' style={styles.SearchboxIcon} />
               </View>
-            <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold', marginLeft: 10, marginVertical:     10 }}>Top libros de esta semana</Text>
+            <Text style={{color: 'white', fontSize: 24, fontFamily:'EncodeSans-Bold', marginLeft: 10, marginVertical:     10 }}>Top libros de esta semana</Text>
             <View style={styles.carouselContainerView}>
                 <Carousel style={styles.carousel}
                 data={gallery}
@@ -122,7 +122,7 @@ const Productos = () => {
  </View>
 </View>
     <View style={{marginHorizontal: 14}}>
-        <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold',marginBottom: 24}}>Continuar Leyendo</Text>
+        <Text style={{color: 'white', fontSize: 24, fontFamily:'EncodeSans-Bold',marginBottom: 24}}>Continuar Leyendo</Text>
         <ImageBackground
         style={{height: 250, width: '100%', backgroundColor: '000'}}
         resizeMode='cover'
@@ -130,7 +130,7 @@ const Productos = () => {
     }}
         >
 
-        <Text style={{color: 'white', padding: 14}}>Harry Poter y la piedra filosofal</Text>
+        <Text style={{color: 'white', padding: 14,fontFamily:'EncodeSans-Regular'}}></Text>
 
           <TouchableOpacity style={{...styles.playIconContainer, position: 'absolute',top: '40%', right: '40%'}}>
             <FontAwesome5  name='book-open' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -139,8 +139,8 @@ const Productos = () => {
         <View style={{height: 4, borderRadius: 10, backgroundColor: '#02ad94', position: 'absolute', bottom: 0, width: '40%'}}></View> */}
         </ImageBackground>
         <View style={{flexDirection: 'row', justifyContent: 'space-between',alignItems: 'center',marginBottom: 24, marginTop: 36}}>
-        <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold',}}>Clasicos</Text>
-        <Text style={{color: '#02ad94', fontSize: 14, fontWeight: 'normal'}}>View All</Text>
+        <Text style={{color: 'white', fontSize: 24, fontFamily:'EncodeSans-Bold'}}>Clasicos</Text>
+        <Text style={{color: '#02ad94', fontSize: 14, fontFamily:'EncodeSans-Regular'}}>View All</Text>
         </View>
       
         <FlatList 
@@ -180,7 +180,7 @@ carouselText: {
     position: 'absolute', 
     bottom: 10, 
     left: 2, 
-    fontWeight: 'bold'
+    fontFamily:'EncodeSans-Bold'
 },
 carouselIcon: {
     position: 'absolute', 
@@ -206,6 +206,7 @@ SearchboxContainer: {
     padding: 12,
     paddingLeft: 20,
     fontSize: 16,
+    fontFamily:'EncodeSans-Regular'
   },
   SearchboxIcon: {
     position: 'absolute', 
@@ -238,14 +239,14 @@ movieInfoContainer: {
 movieName: {
   paddingLeft: 14,
   color: 'white', 
-  fontWeight: 'bold', 
+  fontFamily:'EncodeSans-Bold', 
   fontSize: 20,
   marginBottom: 6
 }, 
 movieStat: {
   paddingLeft: 14,
   color: 'white', 
-  fontWeight: 'bold', 
+  fontFamily:'EncodeSans-Bold', 
   fontSize: 14, 
   opacity: 0.8
 },

@@ -21,8 +21,8 @@ export default function LoginScreen({navigation}){
                 <Image source={require('../../img/logo.png')} style={styles.logo}/>
             </View>
 
-            <Input placeholder="Email" leftIcon={<Icon name={'user'} size={20}/>} keyboardType='email-address' value={email} onChangeText={(email)=>setEmail(email)}/>
-            <Input placeholder="Password" leftIcon={<Icon name={'lock'} size={20}/>} keyboardType='default' secureTextEntry={true} value={password} onChangeText={(password)=>setPassword(password)}/>
+            <Input style={styles.inputs} placeholder="Email" leftIcon={<Icon name={'user'} size={20} color={'#3bceb5'}/>} keyboardType='email-address' value={email} onChangeText={(email)=>setEmail(email)}/>
+            <Input style={styles.inputs} placeholder="Password" leftIcon={<Icon name={'lock'} size={20} color={'#3bceb5'}/>} keyboardType='default' secureTextEntry={true} value={password} onChangeText={(password)=>setPassword(password)}/>
 
 
                 <Pressable onPress={()=> iniciarSesion()}>
@@ -56,41 +56,48 @@ const styles = StyleSheet.create({
         flex:1,
         alignContent:'center',
         justifyContent:'center',
-        padding:40
+        padding:40,
+        backgroundColor:'black',
+        
     },
     bar:{
         backgroundColor:'#d7e9ce'
     },
     logo:{
-        width:200,
-        height:200,
+        width:320,
+        height:290,
         borderRadius:10,
-        marginLeft:55,
-        marginBottom:30
+        marginBottom:30,
+        
     },
     submit:{
         padding:15,
         borderRadius:20,
-        backgroundColor:'#71bf4a',
+        backgroundColor:'#3bceb5',
         fontSize:15,
-        fontWeight:"bold",
         textAlign:'center',
         width:'60%',
         justifyContent:'center',
         marginLeft:60,
-        marginTop:15
+        marginTop:15,
+        fontFamily:'EncodeSans-Bold'
     },
     register:{
         padding:15,
         borderRadius:20,
-        backgroundColor:'#71bf4a',
+        backgroundColor:'#3bceb5',
         fontSize:15,
         fontWeight:"bold",
         textAlign:'center',
         width:'60%',
         justifyContent:'center',
         marginLeft:60,
-        marginTop:15
+        marginTop:15,
+        fontFamily:'EncodeSans-Bold'
+    },
+    inputs:{
+        fontFamily:'EncodeSans-Regular',
+        color:'#fff'
     }
     
 });

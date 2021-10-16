@@ -14,10 +14,9 @@ const usuarioReducer = (state = initalState,payload) =>{
 
     switch (payload.type) {
         case 'sign-in':
-           alert("Bienvenido al sistema");
            return { ...state,usuario: payload.data, activo:true} 
         case 'sign':
-            saveUsuario(payload.data).then((msg)=>alert('Usuario guardado'));
+            saveUsuario(payload.data);
             return { ...state,usuario: payload.data, activo:true}
         case 'sign-out':
             deleteUsuario(payload.data).then((msg)=>alert('Sesion cerrada'));
