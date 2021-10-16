@@ -1,6 +1,6 @@
 # ProyectoDPS 📕
-Creacion de una aplicacion de venta de libros y biblioteca personal para la materia de Diseño y Programación de Software Multiplataforma en la Universidad Don Bosco, El Salvador.
-###Video fase 2:  
+Creacion de una aplicacion de venta de libros y biblioteca personal para la materia de Diseño y Programación de Software Multiplataforma en la Universidad Don Bosco, El Salvador.  
+### Video fase 2:  
 https://www.youtube.com/watch?v=rb77btppGzA  
 ### Herramientas 🛠️
 -[Visual Studio code] https://code.visualstudio.com/Download  
