@@ -28,6 +28,6 @@ Usted es libre de: Compartir — copiar y redistribuir el material en cualquier 
 Tablero de trello: https://trello.com/b/i64DULCT/proyecto-dps-aplicacion-de-ebooks  
 Mock-ups de diseño: https://drive.google.com/drive/folders/1Il09isp9-UyJEQLdCLv3GksfwSZyqPQp
 
-### Manuales
+### Manuales 📔
 Manual de usuario: 
 Manual técnico: https://drive.google.com/file/d/1YoorWQpxCKEwOpCNBZWDOdC3ppzTFFpr/view?usp=sharing
