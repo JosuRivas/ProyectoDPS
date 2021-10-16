@@ -12,7 +12,9 @@ export default function TabMenu(){
   return(
 
       <Tab.Navigator
+                
                 screenOptions={({ route }) => ({
+                  
                   tabBarIcon: ({ focused, color, size }) => {
                     let iconName;
         
@@ -31,9 +33,13 @@ export default function TabMenu(){
                     // You can return any component that you like here!
                     return <Ionicons name={iconName} size={size} color={color} />;
                   },
-                  tabBarActiveTintColor: '#3284ce',
+                  tabBarActiveTintColor: '#3bceb5',
                   tabBarInactiveTintColor: 'gray',
+                  tabBarInactiveBackgroundColor:'black',
+                  tabBarActiveBackgroundColor:'black'
+                  
                 })}
+                sceneContainerStyle={{backgroundColor:'black'}}
       >
         <Tab.Screen name="Inicio" component={Home} options={{headerShown:false}} />
         <Tab.Screen name="Tienda" component={Store} options={{headerShown:false}} />

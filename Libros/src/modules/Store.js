@@ -76,16 +76,19 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        backgroundColor:'black'
     },
     bookCover:{
         marginRight:10,
         width:200,
-        height:300
+        height:320,
+        borderRadius:15
     },
     sectionHeader:{
         fontSize:20,
-        fontWeight:'bold'
+        fontFamily:'EncodeSans-Bold',
+        color:'#fff'
 
     },
     categoryContainer:{
@@ -94,6 +97,9 @@ const styles = StyleSheet.create({
 
     },
     imageDesc:{
+        marginTop:5,
         textAlign:'center',
+        color:'#fff',
+        fontFamily:'EncodeSans-Regular'
     }
 });

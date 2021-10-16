@@ -5,7 +5,6 @@ import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { ProgressBar, Colors } from 'react-native-paper';
-import Libro from './libro'
 
 const Productos = ({navigation}) => {
 
@@ -74,8 +73,6 @@ const Productos = ({navigation}) => {
                     stat: item.released,
                     desc: item.desc
                 })
-
-                {<Libro/>}
                 }
             
                
@@ -105,7 +102,7 @@ const Productos = ({navigation}) => {
               <View style={styles.SearchboxContainer}>
            
               </View>
-            <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold', marginLeft: 10, marginVertical:     10 }}>Continuar leyendo</Text>
+            <Text style={{color: 'white', fontSize: 24, fontFamily:'EncodeSans-Bold', marginLeft: 10, marginVertical:     10 }}>Continuar leyendo</Text>
             <View style={styles.carouselContainerView}>
                 <Carousel style={styles.carousel}
                 data={gallery}
@@ -141,8 +138,8 @@ const Productos = ({navigation}) => {
     <View style={{marginHorizontal: 14}}>
     
         <View style={{flexDirection: 'row', justifyContent: 'space-between',alignItems: 'center',marginBottom: 24, marginTop: 36}}>
-        <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold',}}>Libros adquiridos</Text>
-        <Text style={{color: '#02ad94', fontSize: 14, fontWeight: 'normal'}}>ver todos</Text>
+        <Text style={{color: 'white', fontSize: 24, fontFamily:'EncodeSans-Bold'}}>Libros adquiridos</Text>
+        <Text style={{color: '#02ad94', fontSize: 14, fontFamily:'EncodeSans-Regular'}}>ver todos</Text>
         </View>
       
         <FlatList 
@@ -218,7 +215,7 @@ carouselText: {
     position: 'absolute', 
     bottom: 10, 
     left: 2, 
-    fontWeight: 'bold'
+    fontFamily:'EncodeSans-Bold'
 },
 carouselIcon: {
     flex:1,
@@ -275,14 +272,14 @@ movieInfoContainer: {
 movieName: {
   paddingLeft: 14,
   color: 'white', 
-  fontWeight: 'bold', 
+  fontFamily:'EncodeSans-Bold',
   fontSize: 20,
   marginBottom: 6
 },
 movieStat: {
   paddingLeft: 14,
   color: 'white', 
-  fontWeight: 'bold', 
+  fontFamily:'EncodeSans-Bold', 
   fontSize: 14, 
   opacity: 0.8
 },
@@ -308,8 +305,9 @@ playIconContainer: {
         justifyContent: 'center',
         alignItems: 'center',
         textAlign:'center', 
-        flexDirection:'column'
-   
+        flexDirection:'column',
+        fontFamily:'EncodeSans-Regular'
+
  
     },
   

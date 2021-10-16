@@ -50,7 +50,7 @@ const MyCarousel = ({ data }) => {
                         return <CarouselItem item={item} />
                     }}
                     onScroll={Animated.event(
-                        [{ nativeEvent: { contentOffset: { x: scrollX } } }]
+                        [{ nativeEvent: { contentOffset: { x: scrollX } } }],{useNativeDriver: false}
                     )}
                 />
 

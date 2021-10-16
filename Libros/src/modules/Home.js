@@ -25,6 +25,7 @@ export default function Home({navigation}){
         <ScrollView>
 
         <View style={styles.container}>
+            <Text style={styles.title}>Bienvendo {login.usuario.email}</Text>
             <MyCarousel data = {dummyData}/>
             
              <Productos/>
@@ -32,8 +33,8 @@ export default function Home({navigation}){
         </View>
         </ScrollView>
         /*<View style={styles.container}>
-            <StatusBar backgroundColor={'#d7e9ce'} barStyle='dark-content' translucent={true}/>
-            <Text>Bienvendo {login.usuario.email}</Text>
+            
+            
             <Pressable onPress={()=>desconectarse()}>
                 <Text style={styles.submit}>Cerrar Sesión</Text>
             </Pressable>
@@ -83,4 +84,10 @@ const styles = StyleSheet.create({
             justifyContent:'center',
             marginTop:15
     },
+    title:{
+        color:'#fff',
+        fontFamily:'EncodeSans-Bold',
+        fontSize:20,
+        marginLeft:10
+    }
 });
