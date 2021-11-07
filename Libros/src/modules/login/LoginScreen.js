@@ -1,13 +1,12 @@
 import React, { useState,useContext} from "react";
-import {View,Text, Pressable,Image,StatusBar,StyleSheet} from "react-native";
+import {View,Text, Pressable,Image,StatusBar,StyleSheet, Alert} from "react-native";
 import { Input } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { UsuarioContext } from "./context/UsuarioContext";
+import {saveUsuario} from "../login/storage/UsuarioAsyncStorage"
 
 
 export default function LoginScreen({navigation}){
 
-    const [login, loginAction] = useContext(UsuarioContext);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -37,17 +36,34 @@ export default function LoginScreen({navigation}){
     )
 
     function goToScreen(route){
-        navigation.navigate(route);
+        
+        if (route == 'TabMenu') {
+            navigation.navigate(route,{screen:'Inicio'});
+        }else{
+            navigation.navigate(route);
+        }
     }
 
-    function iniciarSesion(){
-
-        loginAction({
-            type:'sign',data:{
-                email,password
-            }
+    async function iniciarSesion(){
+        const body = {correo:email,password}
+        await fetch('http://10.0.2.2:8080/api/auth/login',{
+                method:'post',
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify(body)
         })
-        goToScreen('TabMenu');
+            .then(resp => resp.json())
+            .then((resp)=>{                
+                if (resp.msg) {
+                    Alert.alert("Error al iniciar sesión",resp.msg);
+                }else{
+                    saveUsuario(resp.usuario.correo,resp.token,resp.usuario.uid);
+                    goToScreen('TabMenu')
+                }
+                
+            })
+            .catch(console.warn); 
     }
 }
 
