@@ -6,7 +6,6 @@ https://www.youtube.com/watch?v=rb77btppGzA
 -[Visual Studio code] https://code.visualstudio.com/Download  
 -[Expo] https://docs.expo.dev/get-started/installation/  
 -[Android Studio] https://developer.android.com/studio  
--[Strapi] https://strapi.io/documentation/developer-docs/latest/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project  
 -[React Native] https://reactnative.dev/docs/getting-started  
 -[NodeJS] https://nodejs.org/es/download/  
 -[MongoDB] https://www.mongodb.com/es/cloud/atlas/signup  
