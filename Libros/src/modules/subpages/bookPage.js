@@ -1,31 +1,64 @@
-import React, {useState}from 'react'; 
-import {StyleSheet,Text,ScrollView,View,Image, Pressable, Animated} from 'react-native';
+import React, {useState,useEffect}from 'react'; 
+import {StyleSheet,Text,ScrollView,View,Image, Pressable, Animated, Alert} from 'react-native';
+import { getJWT, getUID, getUsuario } from '../login/storage/UsuarioAsyncStorage';
 
 export default function bookPage({route,navigation}){
+    const [uid,setUID] = useState('');
+    const [token,setToken] = useState('');
     const {book} = route.params;
-    const [selected,setSelected] = useState(false);
+    useEffect(()=>{
+        fetchUser(); 
+    }, []) 
     return(
         <>
             <ScrollView style={styles.container}>
                 <View style={styles.bookContainer}>
-                    <Text style={styles.title}>{book.Titulo}</Text>
-                    <Text style={styles.author}>{book.Autor}</Text>
+                    <Text style={styles.title}>{book.nombre}</Text>
+                    <Text style={styles.author}>{book.autor}</Text>
                     <Image
                         style={styles.bookCover}
-                        source={{uri: book.Portada}}
+                        source={{uri: `http://10.0.2.2:8080/api/uploads/productos/${book._id}`}}
                     />
-                    <Pressable style={selected ? styles.selected : styles.priceBtn} onPress={()=>{
-                        setSelected(!selected);
+                    <Pressable style={styles.priceBtn} onPress={()=>{
+                        comprarLibro();
                     }}>
-                        <Text style={styles.price}>Comprar: ${book.Precio}</Text>
+                        <Text style={styles.price}>Comprar: ${book.precio}</Text>
                     </Pressable>
                     <View>
-                        <Text style={styles.description}>{book.Descripcion}</Text>
+                        <Text style={styles.description}>{book.descripcion}</Text>
                     </View>
                 </View>
             </ScrollView>
         </>
     )
+
+    async function comprarLibro(){
+        const body = {usuario:uid,libro:book._id}
+        fetch('http://10.0.2.2:8080/api/compras',{
+                method:'post',
+                headers:{
+                    'Content-Type':'application/json',
+                    'x-token':token
+                },
+                body:JSON.stringify(body)
+        })
+            .then(resp => resp.json())
+            .then(resp=>{                
+                if (resp.msg) {
+                    Alert.alert("Error al hacer la compra",resp.msg);
+                }else{
+                    Alert.alert("Compra realizada con exito!");
+                }
+                
+            })
+            .catch(console.warn); 
+    }
+
+    async function fetchUser(){
+        const uid = await getUID();
+        const token = await getJWT();
+        setToken(token);setUID(uid);
+    }
 }
 
 const styles = StyleSheet.create({
@@ -61,7 +94,7 @@ const styles = StyleSheet.create({
         textAlign:'center',
         fontSize:20,
         padding:5,
-        fontFamily:'EncodeSans-Regular'
+        fontFamily:'EncodeSans-Regular',
         
     },
     description:{

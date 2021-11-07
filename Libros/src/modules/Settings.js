@@ -1,6 +1,7 @@
 import React ,{useContext}from 'react'; 
 import {StyleSheet,Text, View,Pressable,Alert} from 'react-native';
 import { UsuarioContext } from './login/context/UsuarioContext';
+import { deleteUsuario } from './login/storage/UsuarioAsyncStorage';
 
 
 export default function Settings({navigation}){
@@ -14,11 +15,8 @@ export default function Settings({navigation}){
             "¿Esta seguro que \ndesea cerrar sesión?",
             [
                 {
-                    text:"Si",onPress:()=>{
-                        loginAction({
-                            type:'sign-out',
-                            data:{}
-                        })
+                    text:"Si",onPress:async()=>{
+                        await deleteUsuario();
                         goToScreen('Login')
                     }
                 },

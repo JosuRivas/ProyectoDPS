@@ -1,69 +1,35 @@
-import React, {useContext, useEffect}from 'react'; 
+import React, {useState,useEffect}from 'react'; 
 import {StyleSheet, TextInput,Text, View, Pressable,Alert,StatusBar,BackHandler,ScrollView} from 'react-native';
 import { UsuarioContext } from './login/context/UsuarioContext';
 import MyCarousel from '../../components/Carousel';
 import Productos from '../../components/productos';
 import { dummyData } from '../../data/Data';
-function useBackButton(handler){
-    useEffect(()=>{
-        BackHandler.addEventListener('hardwareBackPress',handler);
+import { getUsuario,getJWT } from './login/storage/UsuarioAsyncStorage';
 
-        return() =>{
-            BackHandler.removeEventListener('hardwareBackPress',handler);
-        }
-    },[handler])
-}
+export default function Home ({navigation}){
+    const [user,setUser] = useState('');
+    fetchUser(); 
+        
 
-
-
-export default function Home({navigation}){
-
-    useBackButton(desconectarse);
-    const [login, loginAction] = useContext(UsuarioContext);
-
+    
     return(
         <ScrollView>
 
         <View style={styles.container}>
-            <Text style={styles.title}>Bienvendo {login.usuario.email}</Text>
+            <Text style={styles.title}>Bienvendo {user}</Text>
             <MyCarousel data = {dummyData}/>
             
              <Productos/>
 
         </View>
         </ScrollView>
-        /*<View style={styles.container}>
-            
-            
-            <Pressable onPress={()=>desconectarse()}>
-                <Text style={styles.submit}>Cerrar Sesión</Text>
-            </Pressable>
-        </View>*/
     )
 
-    function goToScreen(route){
-        navigation.navigate(route);
-    }
-
-    function desconectarse(){
-        Alert.alert(
-            "Salir",
-            "¿Esta seguro que \ndesea cerrar sesión?",
-            [
-                {
-                    text:"Si",onPress:()=>{
-                        loginAction({
-                            type:'sign-out',
-                            data:{}
-                        })
-                        goToScreen('Login')
-                    }
-                },
-                {
-                    text:"No",onPress:()=>{},style:'cancel'
-                }
-            ]
-        )
+    async function fetchUser(){
+        const userData = await getUsuario();
+        const jwt = await getJWT();
+        console.log(jwt);
+        setUser(userData);
     }
 
 }

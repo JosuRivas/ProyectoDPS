@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Library from './Library';
 import Settings from './Settings';
 import React from 'react';
+import readBook from './subpages/readBook';
 const Tab = createBottomTabNavigator();
 
 export default function TabMenu(){
@@ -46,6 +47,7 @@ export default function TabMenu(){
         <Tab.Screen name="Biblioteca" component={Library} options={{headerShown:false}} />
         <Tab.Screen name="Más" component={Settings} options={{headerShown:false}} />
         <Tab.Screen name="BookPage" component={bookPage} options={{tabBarButton: () => null,tabBarVisible: false,headerShown:false}} />
+        <Tab.Screen name="ReadBook" component={readBook} options={{tabBarButton: () => null,tabBarVisible: false,headerShown:false}} />
       </Tab.Navigator> 
 
   )
