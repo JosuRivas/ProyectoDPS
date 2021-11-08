@@ -29,5 +29,5 @@ Tablero de trello: https://trello.com/b/i64DULCT/proyecto-dps-aplicacion-de-eboo
 Mock-ups de diseño: https://drive.google.com/drive/folders/1Il09isp9-UyJEQLdCLv3GksfwSZyqPQp
 
 ### Manuales 📔
-Manual de usuario: https://drive.google.com/file/d/1CgsWcR8rNwfxlcHDggfVj07Lono-NYjx/view?usp=sharing  
-Manual técnico: https://drive.google.com/file/d/1YoorWQpxCKEwOpCNBZWDOdC3ppzTFFpr/view?usp=sharing
+Manual de usuario: https://drive.google.com/file/d/192xhkejMN8NDNT2MkHLLJE1J-VSQiE9x/view?usp=sharing
+Manual técnico: https://drive.google.com/file/d/1z0kbCeJvMpSP6BwQjeMnda62sxszS3Rw/view?usp=sharing
